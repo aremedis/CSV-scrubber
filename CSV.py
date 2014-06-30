@@ -10,9 +10,9 @@ today = str(datetime.date.today())
 
 
 
-filein = '/Users/rwatson/Downloads/'+sys.argv[-1]
-fileout = '/Users/rwatson/.Trash/temp.tmp'
-fileout2 = '/Users/rwatson/Desktop/'+today+' Amex_Chargebacks.csv'
+filein = '/Users/<USERNAME>/Downloads/'+sys.argv[-1]
+fileout = '/Users/<USERNAME>/.Trash/temp.tmp'
+fileout2 = '/Users/<USERNAME>/Desktop/'+today+' Amex_Chargebacks.csv'
 
 with open(filein, 'rb') as infile, open(fileout, 'wb') as outfile:
 	reader = csv.reader(infile)
